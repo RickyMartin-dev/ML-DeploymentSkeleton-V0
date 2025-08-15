@@ -10,7 +10,8 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
 list_of_files = [
     ".env", # Local development of ENVIRONMENT vatiables
     ".github/workflows/.gitkeep", # temp file for github CICD
-    # "experiments/testing.py", # for testing files if needed
+    "experiments/__init__.py", # experiments folder with Jupyter Notebook
+    "experiments/Project_Exploration.ipynb", # Notebook for experiments
     "requirements.train.txt", # for package versions for train
     "requirements.inference.txt", # for package versions for train
     "Dockerfile.training", # need training docker file
@@ -19,6 +20,7 @@ list_of_files = [
     "src/__init__.py", # Main Code Folder
     "src/data/__init__.py", # folder for data functions
     "src/model/__init__.py", # folder for main modeling code
+    "src/model/train.py", # training file main logic
     "src/inference/__init__.py", # folder for inferencing code
     "src/drift/__init__.py", # folder for code related to drift detection
 ]
